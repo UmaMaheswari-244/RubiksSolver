@@ -15,7 +15,7 @@ An interactive, responsive, and visually appealing **Rubik's Cube Simulator** bu
 
 <img width="1021" height="964" alt="image" src="https://github.com/user-attachments/assets/a70ae0d8-3386-446a-8539-f9dfc0962654" />
 
-##After Scramble the cube
+## After Scramble the cube
 
 <img width="938" height="973" alt="image" src="https://github.com/user-attachments/assets/ab82c608-795f-4a6a-a378-114b8c1a210f" />
 
