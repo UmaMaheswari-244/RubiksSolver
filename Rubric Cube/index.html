@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rubik's Cube Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Rubik's Cube Simulator</h1>
+    <p class="subtitle">Interactive • Responsive • Modern</p>
+  </header>
+
+  <main>
+    <section class="cube-area">
+      <div class="cube-visualization">
+        <div class="face up" data-face="U"></div>
+        <div class="middle-row">
+          <div class="face left" data-face="L"></div>
+          <div class="face front" data-face="F"></div>
+          <div class="face right" data-face="R"></div>
+          <div class="face back" data-face="B"></div>
+        </div>
+        <div class="face down" data-face="D"></div>
+      </div>
+
+      <div class="controls">
+        <div class="rotations">
+          <h2>Face Rotations</h2>
+          <div>
+            <button onclick="doMove('U')">U</button>
+            <button onclick="doMove('U\'')">U'</button>
+            <button onclick="doMove('D')">D</button>
+            <button onclick="doMove('D\'')">D'</button>
+            <button onclick="doMove('L')">L</button>
+            <button onclick="doMove('L\'')">L'</button>
+            <button onclick="doMove('R')">R</button>
+            <button onclick="doMove('R\'')">R'</button>
+            <button onclick="doMove('F')">F</button>
+            <button onclick="doMove('F\'')">F'</button>
+            <button onclick="doMove('B')">B</button>
+            <button onclick="doMove('B\'')">B'</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button onclick="scramble()">🔀 Scramble</button>
+          <button onclick="undoMove()">↩️ Undo</button>
+          <button onclick="resetCube()">🔄 Reset</button>
+          <button id="solveBtn">🧩 Solve</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <h3>Move History</h3>
+      <div id="moveHistory">None</div>
+    </section>
+
+    <section class="solution-section">
+      <h3>Solution Steps</h3>
+      <div id="solutionSteps">Click "Solve" after scrambling.</div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2025 Rubik's Cube Simulator.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
